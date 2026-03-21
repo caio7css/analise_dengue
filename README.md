@@ -1,37 +1,145 @@
-# Análise de Padrões Espaciais e Temporais da Dengue em Campina Grande
+# 🦟 Identificação de Zonas de Proliferação de Dengue com Machine Learning
 
-Este repositório contém o desenvolvimento técnico referente ao plano de trabalho de Iniciação Científica (PIBIC/UEPB) focado na identificação de zonas de risco de dengue através de técnicas de **Aprendizado de Máquina Não Supervisionado**.
-
-## 📌 Visão Geral do Projeto
-O projeto visa transcender os métodos tradicionais de vigilância epidemiológica, utilizando algoritmos de clusterização para extrair padrões ocultos e identificar agrupamentos naturais nos dados de Campina Grande/PB. A análise integra variáveis epidemiológicas (incidência, sazonalidade), fatores ambientais (precipitação, temperatura) e indicadores sociodemográficos.
-
-## 🛠️ Tecnologias e Algoritmos
-A implementação foca na avaliação e comparação dos seguintes modelos:
-* **K-Means:** Para particionamento dos dados em grupos homogêneos.
-* **DBSCAN:** Para identificação de clusters baseados em densidade e detecção de outliers.
-* **Agrupamento Hierárquico:** Para investigação de estruturas de dados em diferentes níveis.
-
-## 📊 Métricas de Validação
-Para garantir a precisão científica, os modelos são avaliados por meio de:
-* **Silhouette Score:** Medição de coesão e separação.
-* **Davies-Bouldin Index:** Avaliação da similaridade entre clusters.
-* **Análise Qualitativa:** Confronto dos clusters gerados com a realidade dos dados epidemiológicos locais.
-
-## 📂 Estrutura do Repositório
-* `/data`: Bases de dados epidemiológicos, ambientais e georreferenciáveis.
-* `/notebooks`: Experimentos de implementação, tratamento de dados faltantes e normalização.
-* `/src`: Scripts principais de aplicação dos algoritmos (K-Means, DBSCAN, etc).
-* `/results`: Mapas de calor e visualizações geográficas das áreas de risco.
-
-## 📅 Cronograma de Atividades (Resumo)
-| Atividade | Descrição | Período (2025-2026) |
-| :--- | :--- | :--- |
-| **Atividade 4** | Coleta de dados epidemiológicos e ambientais | Nov - Jan |
-| **Atividade 5** | Tratamento, normalização e georreferenciamento | Dez - Fev |
-| **Atividade 6** | Implementação dos algoritmos de clusterização | Jan - Mar |
-| **Atividade 7** | Validação métrica e refinamento dos modelos | Mar - Mai |
+Projeto de Iniciação Científica (PIVIC/UEPB) voltado à análise espaço-temporal da dengue em Campina Grande/PB utilizando técnicas de **aprendizado de máquina**, com foco em **clusterização de dados epidemiológicos** e integração futura com processamento de imagens de satélite.
 
 ---
-**Aluno:** Caio César Silva dos Santos 
-**Orientador:** Dunfrey Pires Aragão 
-**Instituição:** Universidade Estadual da Paraíba (UEPB) 
+
+## 📌 Sobre o Projeto
+
+A dengue é um dos principais desafios de saúde pública no Brasil. Este projeto propõe o uso de técnicas de **Machine Learning não supervisionado** para identificar padrões ocultos na distribuição dos casos da doença.
+
+A partir da análise de dados epidemiológicos, ambientais e sociodemográficos, buscamos:
+
+* Identificar **áreas de maior risco**
+* Detectar **padrões espaço-temporais**
+* Auxiliar na **tomada de decisão em saúde pública**
+
+---
+
+## 🎯 Objetivos
+
+### Objetivo Geral
+
+Aplicar algoritmos de clusterização para analisar a distribuição dos casos de dengue em Campina Grande/PB.
+
+### Objetivos Específicos
+
+* Aplicar algoritmos como:
+
+  * K-Means
+  * DBSCAN
+  * Clusterização Hierárquica
+* Avaliar desempenho com métricas:
+
+  * Silhouette Score
+  * Davies-Bouldin Index
+* Gerar visualizações:
+
+  * Mapas de calor
+  * Distribuição geográfica dos clusters
+* Identificar padrões relevantes para apoio a políticas públicas
+
+---
+
+## 🧠 Tecnologias e Métodos
+
+* **Linguagem:** Python
+
+* **Bibliotecas (previstas):**
+
+  * Pandas
+  * NumPy
+  * Scikit-learn
+  * Matplotlib / Seaborn
+  * GeoPandas / Folium (visualização geográfica)
+
+* **Técnicas utilizadas:**
+
+  * Aprendizado de Máquina Não Supervisionado
+  * Clusterização de Dados
+  * Análise Espacial
+
+---
+
+## 📊 Dados Utilizados
+
+O projeto integra diferentes fontes de dados:
+
+* Dados epidemiológicos (casos de dengue)
+* Dados ambientais (temperatura, chuva, etc.)
+* Dados sociodemográficos
+* (Futuro) Imagens de satélite
+
+---
+
+## ⚙️ Estrutura do Projeto (sugestão)
+
+```
+📁 projeto-dengue-ml
+│
+├── data/               # Dados brutos e tratados
+├── notebooks/         # Análises exploratórias
+├── src/               # Implementação dos algoritmos
+├── results/           # Resultados, gráficos e mapas
+├── docs/              # Relatórios e documentação
+└── README.md
+```
+
+---
+
+## 📈 Resultados Esperados
+
+* Identificação de **clusters de risco**
+* Geração de **mapas de calor**
+* Análise comparativa entre algoritmos
+* Suporte à:
+
+  * Vigilância epidemiológica
+  * Planejamento de ações públicas
+  * Combate ao Aedes aegypti
+
+---
+
+## 🚧 Status do Projeto
+
+🔄 Em desenvolvimento
+📌 Etapa atual: Estruturação do repositório e início da implementação dos modelos de clusterização
+
+---
+
+## 👨‍💻 Autor
+
+**Caio César Silva dos Santos**
+Graduando em Ciência da Computação - UEPB
+Projeto de Iniciação Científica (PIVIC)
+
+---
+
+## 👨‍🏫 Orientação
+
+**Prof. Dr. Dunfrey Pires Aragão**
+
+---
+
+## 📄 Licença
+
+Este projeto é de caráter acadêmico. A definir.
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são bem-vindas para fins acadêmicos e de pesquisa.
+Sinta-se à vontade para abrir issues ou pull requests.
+
+---
+
+## 📌 Observação
+
+Este repositório faz parte de um projeto maior que também inclui:
+
+* Processamento de imagens de satélite (CNNs)
+* Desenvolvimento de plataforma web para visualização dos dados
+
+---
+
